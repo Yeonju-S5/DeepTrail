@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEEP TRAIL &mdash; 남들이 모르는 길, 우리만의 여정</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+
+    <!-- ==================== LOADER ==================== -->
+    <div id="loader">
+        <div class="loader-inner">
+            <span class="loader-line"></span>
+            <span class="loader-text">DEEP TRAIL</span>
+            <span class="loader-line"></span>
+        </div>
+    </div>
+
+    <!-- ==================== SCROLL PROGRESS ==================== -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ==================== HEADER ==================== -->
+    <header id="header">
+        <nav class="gnb">
+            <a href="#hero" class="logo">DEEP TRAIL</a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">소개</a></li>
+                <li><a href="#destinations" class="nav-link">여행지</a></li>
+                <li><a href="#services" class="nav-link">서비스</a></li>
+                <li><a href="#reviews" class="nav-link">후기</a></li>
+                <li class="nav-my"><a href="#" class="nav-link">MY</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <p class="hero-brand reveal reveal-up">DEEP TRAIL</p>
+            <div class="hero-title-wrap">
+                <h1 class="hero-title">
+                    <span class="title-line reveal reveal-up" style="--delay: 0.2s">남들이 모르는 길,</span>
+                    <span class="title-line reveal reveal-up" style="--delay: 0.4s">우리만의 여정</span>
+                </h1>
+            </div>
+            <p class="hero-sub reveal reveal-up" style="--delay: 0.6s">여정의 모든 순간을 깊이 생각합니다</p>
+            <a href="#destinations" class="hero-cta reveal reveal-up" style="--delay: 0.8s">
+                <span>여정 시작하기</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-line-wrap">
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about">
+        <div class="section-inner about-layout">
+            <div class="section-deco">
+                <span class="section-number">01</span>
+                <span class="section-label">ABOUT</span>
+            </div>
+            <div class="about-left">
+                <h2 class="about-title reveal reveal-up">
+                    당신이 걷는 길,<br>
+                    우리가 먼저 걸었습니다
+                </h2>
+                <div class="gold-divider reveal reveal-up" style="--delay: 0.2s"></div>
+            </div>
+            <div class="about-right reveal reveal-up" style="--delay: 0.3s">
+                <p>DEEP TRAIL은 소수만을 위한 프라이빗 투어를 설계합니다.</p>
+                <p>검증된 루트, 엄선된 숙소, 오직 당신만을 위한 일정.</p>
+                <p>여행의 깊이가 달라집니다.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-num" data-count="150">0</span>
+                        <span class="stat-unit">+</span>
+                        <span class="stat-label">검증된 루트</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-count="98">0</span>
+                        <span class="stat-unit">%</span>
+                        <span class="stat-label">고객 만족도</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num" data-count="12">0</span>
+                        <span class="stat-unit">년</span>
+                        <span class="stat-label">업력</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DESTINATIONS ==================== -->
+    <section id="destinations">
+        <div class="section-inner">
+            <div class="section-deco">
+                <span class="section-number">02</span>
+                <span class="section-label">DESTINATIONS</span>
+            </div>
+            <h2 class="section-title reveal reveal-up">여행지</h2>
+            <p class="section-subtitle reveal reveal-up" style="--delay: 0.1s">DEEP TRAIL이 엄선한 특별한 루트</p>
+            <div class="filter-wrap reveal reveal-up" style="--delay: 0.2s">
+                <button class="filter-btn active" data-filter="all">전체</button>
+                <button class="filter-btn" data-filter="overseas">해외</button>
+                <button class="filter-btn" data-filter="domestic">국내</button>
+            </div>
+            <div class="destination-grid">
+
+                <!-- 산토리니 -->
+                <div class="dest-card reveal reveal-up" data-category="overseas" style="--delay: 0.1s">
+                    <div class="dest-img" style="--bg: linear-gradient(160deg, #1a1a3e 0%, #6b2f4a 40%, #c44536 70%, #f4a261 100%)">
+                        <span class="dest-country">그리스</span>
+                    </div>
+                    <div class="dest-info">
+                        <span class="dest-duration">4박 5일</span>
+                        <h3 class="dest-name">산토리니</h3>
+                        <p class="dest-desc">에게해 절벽 위, 석양이 머무는 자리</p>
+                        <div class="dest-price">
+                            <span class="price-from">1인</span>
+                            <span class="price-value">&#8361;4,900,000~</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 발리 -->
+                <div class="dest-card reveal reveal-up" data-category="overseas" style="--delay: 0.2s">
+                    <div class="dest-img" style="--bg: linear-gradient(160deg, #0d3b2e 0%, #1a6b4a 40%, #2d8a5e 70%, #5ab88a 100%)">
+                        <span class="dest-country">인도네시아</span>
+                    </div>
+                    <div class="dest-info">
+                        <span class="dest-duration">5박 6일</span>
+                        <h3 class="dest-name">발리</h3>
+                        <p class="dest-desc">열대의 고요 속, 나만의 시간</p>
+                        <div class="dest-price">
+                            <span class="price-from">1인</span>
+                            <span class="price-value">&#8361;3,200,000~</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 스위스 -->
+                <div class="dest-card reveal reveal-up" data-category="overseas" style="--delay: 0.3s">
+                    <div class="dest-img" style="--bg: linear-gradient(160deg, #1a2a4a 0%, #3a6a8a 40%, #6a9ab8 70%, #a8cce0 100%)">
+                        <span class="dest-country">스위스</span>
+                    </div>
+                    <div class="dest-info">
+                        <span class="dest-duration">6박 7일</span>
+                        <h3 class="dest-name">스위스</h3>
+                        <p class="dest-desc">알프스가 내려다보는 하루</p>
+                        <div class="dest-price">
+                            <span class="price-from">1인</span>
+                            <span class="price-value">&#8361;6,800,000~</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 아이슬란드 -->
+                <div class="dest-card reveal reveal-up" data-category="overseas" style="--delay: 0.1s">
+                    <div class="dest-img" style="--bg: linear-gradient(160deg, #0a1628 0%, #122a3a 40%, #1a4a4a 70%, #2a6a5a 100%)">
+                        <span class="dest-country">아이슬란드</span>
+                    </div>
+                    <div class="dest-info">
+                        <span class="dest-duration">4박 5일</span>
+                        <h3 class="dest-name">아이슬란드</h3>
+                        <p class="dest-desc">빙하와 오로라 사이, 지구의 끝에서</p>
+                        <div class="dest-price">
+                            <span class="price-from">1인</span>
+                            <span class="price-value">&#8361;5,500,000~</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 제주 -->
+                <div class="dest-card reveal reveal-up" data-category="domestic" style="--delay: 0.2s">
+                    <div class="dest-img" style="--bg: linear-gradient(160deg, #0d2a3a 0%, #1a5a6a 40%, #2a7a7a 70%, #4aaa9a 100%)">
+                        <span class="dest-country">대한민국</span>
+                    </div>
+                    <div class="dest-info">
+                        <span class="dest-duration">2박 3일</span>
+                        <h3 class="dest-name">제주</h3>
+                        <p class="dest-desc">바람이 쉬어가는 섬</p>
+                        <div class="dest-price">
+                            <span class="price-from">1인</span>
+                            <span class="price-value">&#8361;1,800,000~</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 여수 -->
+                <div class="dest-card reveal reveal-up" data-category="domestic" style="--delay: 0.3s">
+                    <div class="dest-img" style="--bg: linear-gradient(160deg, #0a0a2a 0%, #1a1a4a 40%, #2a2a6a 70%, #4a4a8a 100%)">
+                        <span class="dest-country">대한민국</span>
+                    </div>
+                    <div class="dest-info">
+                        <span class="dest-duration">1박 2일</span>
+                        <h3 class="dest-name">여수</h3>
+                        <p class="dest-desc">밤바다가 건네는 위로</p>
+                        <div class="dest-price">
+                            <span class="price-from">1인</span>
+                            <span class="price-value">&#8361;980,000~</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section id="services">
+        <div class="section-inner">
+            <div class="section-deco">
+                <span class="section-number">03</span>
+                <span class="section-label">SERVICES</span>
+            </div>
+            <h2 class="section-title reveal reveal-up">서비스</h2>
+            <p class="section-subtitle reveal reveal-up" style="--delay: 0.1s">여정의 처음부터 끝까지, 빈틈없이</p>
+            <div class="service-grid">
+
+                <div class="service-card reveal reveal-up" style="--delay: 0.1s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <rect x="6" y="8" width="36" height="32" rx="3"/>
+                            <line x1="6" y1="16" x2="42" y2="16"/>
+                            <line x1="16" y1="8" x2="16" y2="16"/>
+                            <line x1="32" y1="8" x2="32" y2="16"/>
+                            <circle cx="24" cy="28" r="4"/>
+                            <path d="M20 32l4 4 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">맞춤 일정 설계</h3>
+                    <p class="service-desc">취향과 속도에 맞춘 단 하나의 루트</p>
+                    <span class="service-line"></span>
+                </div>
+
+                <div class="service-card reveal reveal-up" style="--delay: 0.2s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <path d="M8 38V18l16-10 16 10v20"/>
+                            <rect x="18" y="26" width="12" height="12"/>
+                            <line x1="24" y1="26" x2="24" y2="38"/>
+                            <path d="M14 22v-2l10-6 10 6v2"/>
+                            <circle cx="24" cy="14" r="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">프리미엄 숙소</h3>
+                    <p class="service-desc">직접 검증한 부티크 호텔과 리조트</p>
+                    <span class="service-line"></span>
+                </div>
+
+                <div class="service-card reveal reveal-up" style="--delay: 0.3s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <rect x="6" y="20" width="36" height="14" rx="4"/>
+                            <circle cx="14" cy="38" r="4"/>
+                            <circle cx="34" cy="38" r="4"/>
+                            <path d="M6 24h-2v4h2"/>
+                            <path d="M42 22h2v6h-2"/>
+                            <path d="M12 20v-4a4 4 0 014-4h16a4 4 0 014 4v4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">전용 차량 &amp; 드라이버</h3>
+                    <p class="service-desc">이동의 모든 순간, 편안하게</p>
+                    <span class="service-line"></span>
+                </div>
+
+                <div class="service-card reveal reveal-up" style="--delay: 0.4s">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+                            <circle cx="24" cy="14" r="6"/>
+                            <path d="M12 38c0-6.627 5.373-12 12-12s12 5.373 12 12"/>
+                            <path d="M30 20l4-2 2 4"/>
+                            <path d="M18 20l-4-2-2 4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">전문 가이드</h3>
+                    <p class="service-desc">고객의 여정을 가장 먼저 생각하는 동행</p>
+                    <span class="service-line"></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== REVIEWS ==================== -->
+    <section id="reviews">
+        <div class="section-inner">
+            <div class="section-deco">
+                <span class="section-number">04</span>
+                <span class="section-label">REVIEWS</span>
+            </div>
+            <h2 class="section-title reveal reveal-up">후기</h2>
+            <p class="section-subtitle reveal reveal-up" style="--delay: 0.1s">함께한 분들의 이야기</p>
+            <div class="review-grid">
+
+                <!-- 후기 1 -->
+                <div class="review-card reveal reveal-up" style="--delay: 0.1s">
+                    <div class="review-quote">&ldquo;</div>
+                    <p class="review-text">계획 없이 떠난 여행이 이렇게 완벽할 수 있다는 걸 처음 알았습니다. 석양 명소도, 한적한 레스토랑도, 전부 저희만의 시간이었습니다.</p>
+                    <div class="review-stars">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <div class="review-info">
+                        <span class="review-name">김도윤</span>
+                        <span class="review-route">산토리니 5일</span>
+                    </div>
+                </div>
+
+                <!-- 후기 2 -->
+                <div class="review-card reveal reveal-up" style="--delay: 0.2s">
+                    <div class="review-quote">&ldquo;</div>
+                    <p class="review-text">리조트에서만 머물 줄 알았는데, 가이드분이 데려간 우붓 깊숙한 마을이 이번 여행의 하이라이트였습니다. 혼자서는 절대 못 찾았을 곳이에요.</p>
+                    <div class="review-stars">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <div class="review-info">
+                        <span class="review-name">정하은</span>
+                        <span class="review-route">발리 6일</span>
+                    </div>
+                </div>
+
+                <!-- 후기 3 -->
+                <div class="review-card reveal reveal-up" style="--delay: 0.3s">
+                    <div class="review-quote">&ldquo;</div>
+                    <p class="review-text">국내 여행에 가이드가 필요할까 싶었는데, 생각지 못한 곳들을 안내받으니 같은 여수가 아니었습니다. 밤바다가 보이는 조용한 레스토랑에서의 저녁은 오래 기억에 남을 것 같습니다.</p>
+                    <div class="review-stars">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <div class="review-info">
+                        <span class="review-name">최은우</span>
+                        <span class="review-route">여수 2일</span>
+                    </div>
+                </div>
+
+                <!-- 후기 4 -->
+                <div class="review-card review-card--has-option reveal reveal-up" style="--delay: 0.1s">
+                    <div class="review-quote">&ldquo;</div>
+                    <p class="review-text">엄마가 전화해서 그러셨어요. 사전에 가이드분이 부모님 취향이며 건강 상태를 꼼꼼히 여쭤봤는데, 아버지 무릎 안 좋으시다고 했더니 올레길 코스 대신 드라이브로 돌아보는 해안 전망 코스로 바꿔주셨다고요. 그 한마디에 예약하길 정말 잘했다 싶었습니다.</p>
+                    <div class="review-stars">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <div class="review-info">
+                        <span class="review-name">이서연</span>
+                        <span class="review-route">제주 3일</span>
+                        <span class="review-option">옵션: 가족 선물</span>
+                    </div>
+                </div>
+
+                <!-- 후기 5 -->
+                <div class="review-card review-card--has-option reveal reveal-up" style="--delay: 0.2s">
+                    <div class="review-quote">&ldquo;</div>
+                    <p class="review-text">프라이빗 차량으로 이동하며 본 알프스는 단체 투어와는 차원이 달랐습니다. 숙소, 동선, 식사까지 빈틈이 없었습니다. 공항에서부터 전용 차량이 대기하고 있어서, 도착하는 순간부터 여행이 시작되는 느낌이었습니다.</p>
+                    <div class="review-stars">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <div class="review-info">
+                        <span class="review-name">박준혁</span>
+                        <span class="review-route">스위스 7일</span>
+                        <span class="review-option">옵션: 공항 VIP 픽업</span>
+                    </div>
+                </div>
+
+                <!-- 후기 6 -->
+                <div class="review-card review-card--has-option reveal reveal-up" style="--delay: 0.3s">
+                    <div class="review-quote">&ldquo;</div>
+                    <p class="review-text">오로라를 기다리는 시간마저 특별했습니다. 빙하 트레킹 후 가이드분이 예약해둔 레이캬비크의 조용한 레스토랑에서의 저녁까지. 모든 일정이 하나로 이어지는 느낌이었습니다.</p>
+                    <div class="review-stars">
+                        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                    </div>
+                    <div class="review-info">
+                        <span class="review-name">한소희</span>
+                        <span class="review-route">아이슬란드 5일</span>
+                        <span class="review-option">옵션: 프라이빗 다이닝</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA ==================== -->
+    <section id="cta">
+        <div class="cta-bg"></div>
+        <div class="cta-content">
+            <p class="cta-label reveal reveal-up">CONTACT US</p>
+            <h2 class="cta-title reveal reveal-up" style="--delay: 0.2s">당신만의 여정을<br>시작하세요</h2>
+            <a href="#" class="cta-btn reveal reveal-up" style="--delay: 0.4s">
+                <span class="cta-btn-text">상담 예약하기</span>
+                <span class="cta-btn-border"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== TOP BUTTON ==================== -->
+    <button id="topBtn" aria-label="페이지 상단으로">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="footer-logo">DEEP TRAIL</span>
+                    <p class="footer-slogan">남들이 모르는 길, 우리만의 여정</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>여행지</h4>
+                        <ul>
+                            <li><a href="#">산토리니</a></li>
+                            <li><a href="#">발리</a></li>
+                            <li><a href="#">스위스</a></li>
+                            <li><a href="#">아이슬란드</a></li>
+                            <li><a href="#">제주</a></li>
+                            <li><a href="#">여수</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>회사</h4>
+                        <ul>
+                            <li><a href="#">회사 소개</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">채용</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>문의</h4>
+                        <ul>
+                            <li><a href="mailto:hello@deeptrail.co.kr">hello@deeptrail.co.kr</a></li>
+                            <li><a href="tel:02-1234-5678">02-1234-5678</a></li>
+                            <li>평일 09:00 - 18:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 DEEP TRAIL. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="4"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+                    </a>
+                    <a href="#" aria-label="Blog">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="14" y2="13"/><line x1="8" y1="17" x2="12" y2="17"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- JS -->
+    <script src="js/main.js?v=1"></script>
+</body>
+</html>
