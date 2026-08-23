@@ -73,6 +73,32 @@ button {
     color: inherit;
 }
 
+/* --- Skip Navigation --- */
+.skip-nav {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-gold);
+    color: var(--color-bg);
+    padding: 12px 24px;
+    font-family: var(--font-heading);
+    font-size: 14px;
+    letter-spacing: 1px;
+    z-index: 10000;
+    transition: top 0.3s;
+}
+
+.skip-nav:focus {
+    top: 12px;
+}
+
+/* --- Focus Style --- */
+*:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+}
+
 /* --- Loader --- */
 #loader {
     position: fixed;
